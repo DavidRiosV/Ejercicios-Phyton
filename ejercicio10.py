@@ -1,15 +1,18 @@
 #Crea una lista de números y calcula su promedio. 
 
-print("Introduce el tamaño de tu lista")
-l=input()
-lista=[]
-for i in (0,int(l)):
-    print("Dame un numero de tu lista")
-    n = input()
-    
+#Creo una lista
+lista = [10, 20, 30]
 
-for j in lista:
-    suma=suma+1
-    promedio=suma/l
+#creo un contador que me dira la cantidad de numeros de la lista
+c = 0
+#creo la variable suma
+suma=  0
+
+for i in lista:
+    #incremento el contador por cada número
+    c=c+1
+    #realizo la suma de todos
+    suma=suma+i
+
+promedio=suma/c
 print("El promedio es de "+str(promedio))
-    

@@ -1,5 +1,5 @@
 #Calcula la suma de los números del 1 al 100. 
-s=1
-for i in range(1,101):
-    
-print(str(s))   
+s=0
+for i in range(0,101):
+    s=s+i
+print("La suma es de " +str(s))
