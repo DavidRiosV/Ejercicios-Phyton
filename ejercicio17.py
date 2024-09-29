@@ -3,9 +3,10 @@
 #y sobrescriban el método area para calcular el área específica de cada figura.
 from FiguraGeometrica import *   
 
-Circulo=FiguraGeometrica(2,5,0)
-Circulo=Rectangulo(2,5) 
-Circulo=Triangulo(2,5)
+figura1=FiguraGeometrica(12,2)
+rectanfulo1=Rectangulo(10,5) 
+triangulo1=Triangulo(2,5)
 
-Rectangulo.area()
-Triangulo.area()
+print(figura1.area())
+print(rectanfulo1.area())
+print(triangulo1.area())

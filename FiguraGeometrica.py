@@ -1,18 +1,18 @@
 class FiguraGeometrica():
-        def __init__(self, ancho="", altura="",area=0.0):
+    def __init__(self, ancho=0, altura=0):
         self.ancho = ancho
         self.altura = altura
         
-    def area(self,area):
-        print(str(area))
+    def area(self):
+        return "No tiene area asignada"
         
 class Rectangulo(FiguraGeometrica): 
-        def __init__(self):
-        super().__init__(area=self.ancho*self.altura)
+        def area(self):
+            return "El area del rectangulo es " +str(self.ancho * self.altura)
 
 class Triangulo(FiguraGeometrica):
-    def __init__(self):
-        super().__init__(area=(self.ancho*self.altura)/2)
+        def area(self):
+            return "El area del triangulo es " +str((self.ancho*self.altura)/2)
     
         
         
